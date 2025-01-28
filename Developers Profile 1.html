@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> 
+    <title> Founders | SAMBOTO</title>
+    <style>
+        body{
+            margin: 0;
+            overflow: hidden;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(rgb(22, 27, 36), rgba(23, 29, 39, 0.822));
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .strip{
+            position: absolute;
+            height: 100vh;
+            width: 0.0625rem;
+            opacity: .3;
+        }
+
+        .one{
+            left: 25%;
+        }        
+
+        .two{
+            left: 50%;
+        }
+
+        .three{
+            left: 75%;
+        }
+
+        .container{
+            align-items: flex-start;
+            display: flex;
+            justify-content: center;
+            padding: 16.875rem 1.5rem;
+            margin-top: 2.8rem;
+        }
+
+        .card-grid{
+            display: grid;
+            grid-column-gap: 1.5rem;
+            max-width: 75rem;
+            width: 100%;
+        }
+
+        @media(min-width: 75rem){
+            .card-grid{
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        .card{
+            position: relative;
+        }
+
+        .card::before{
+            content: '';
+            display: block;
+            padding-bottom: 150%;
+        }
+
+        .card-background{
+            background-size: cover;
+            background-position: center;
+            border-radius: 0.9375rem;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: filter .2s linear, transform 200ms linear;
+        }
+
+        .card:hover .card-background{
+            transform: scale(1.25) translateZ(0);
+        }
+
+        .card-grid:hover > .card:not(:hover) .card-background{
+            filter: brightness(1) saturate(0) contrast(1) blur(1.25rem);
+        }
+
+        .card-content{
+            padding: 14.375rem 1.25rem;
+            position: absolute;
+            top: 0;
+        }
+
+        .card-category{
+            color: rgba(255, 255, 255, .5);
+            font-size: .9rem;
+            text-transform: uppercase;
+            margin-top: .1rem;
+        }
+
+        .card-heading{
+            color: rgba(255, 255, 255, .9);
+            font-size: 1.9rem;
+            text-shadow: 0.125rem 0.125rem 1.25rem rgba(0 , 0, 0, .2);
+        }
+        p{
+            margin-top: -1.975rem;
+        }
+        
+    </style>
+</head>
+<body img=>
+        <header> 
+            <div class="nav-bar">
+               <a href="html.html" class="logo">SAMBOTO</a>
+                <div class="navigation">
+                <div class="nav-items">
+                    <i class="uil uil-times nav-close-btn"></i>
+                    <a href="html.html"><i class="uil uil-home"></i> Home </a>
+                    <a href="Developers Profile 1.html"><i class="uil uil-briefcase-alt"></i> Founders </a>
+                    <a href="Citations.html"><i class="uil uil-book-reader"></i> References </a>
+                    </div>
+                </div>
+                <i class="uil uil-apps nav-menu-btn"></i>
+               </div>
+            </header> 
+            <script src="swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+        <section class="home">
+           <script src="swiper-bundle.min.js"></script>
+          <script src="main.js"></script>
+
+          
+    <div>
+        <div class="strip one"></div>
+        <div class="strip two"></div>
+        <div class="strip three"></div>
+    </div>
+
+    <section class="container">
+        <div class="card-grid">
+            <a href="" class="card">
+                <div class="card-background" style="background-image: url(1.jpg);"></div>
+                <span class="card-content">
+                    <h3 class="card-heading">De Guzman</h3>
+                    <p class="card-category">
+                        Founder
+                    </p>
+                </span>
+            </a>
+
+            <a href="" class="card">
+                <div class="card-background" style="background-image: url(2.jpg);"></div>
+                <span class="card-content">
+                    <h3 class="card-heading">Garcia</h3>
+                    <p class="card-category">
+                        Co-Founder
+                    </p>
+                </span>
+            </a>
+
+            <a href="" class="card">
+                <div class="card-background" style="background-image: url(3.jpeg);"></div>
+                <span class="card-content">
+                    <h3 class="card-heading">Bersabe</h3>
+                    <p class="card-category">
+                        Co-Founder
+                    </p>
+                </span>
+            </a>
+
+            <a href="" class="card">
+                <div class="card-background" style="background-image: url(4.jpg);"></div>
+                <span class="card-content">
+                    <h3 class="card-heading">Yraola</h3>
+                    <p class="card-category">
+                        Co-Founder
+                    </p>
+                </span>
+            </a>
+
+            
+
+            <a href="" class="card">
+                <div class="card-background" style="background-image: url(5.png);"></div>
+                <span class="card-content">
+                    <h3 class="card-heading">Antic</h3>
+                    <p class="card-category">
+                        Co-Founder
+                    </p>
+                </span>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
